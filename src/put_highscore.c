@@ -14,7 +14,7 @@
 
 void put_highscore(int score)
 {
-	int fd = open("Highscore", O_RDONLY);
+	int fd = open("src/Highscore", O_RDONLY);
 	char buffer[10];
 	int len = 0;
 	char *Highscore;
@@ -23,7 +23,7 @@ void put_highscore(int score)
 	buffer[len] = '\0';
 	if (score > my_get_nbr(buffer)) {
 		close(fd);
-		fd = open("Highscore", O_WRONLY);
+		fd = open("src/Highscore", O_WRONLY);
 		Highscore = my_put_nbr(score);
 		len = my_strlen(Highscore);
 		write(fd, Highscore, len);

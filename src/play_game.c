@@ -12,7 +12,7 @@ void play_game(sfRenderWindow *window, sfEvent event, duck_t duck, sfSprite *bac
 	sfClock *clock = sfClock_create();
 	int score = 0;
 	sfText *Score = sfText_create();
-	sfFont *font = sfFont_createFromFile("arial_narrow_7.ttf");
+	sfFont *font = sfFont_createFromFile("src/arial_narrow_7.ttf");
 	
 	sfText_setFont(Score, font);	
 	while (sfRenderWindow_isOpen(window)) {

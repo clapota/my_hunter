@@ -9,7 +9,7 @@
 
 void initialize_duck(duck_t *duck)
 {
-	duck->sprite = define_sprite(duck->sprite, "spritesheet.png");
+	duck->sprite = define_sprite(duck->sprite, "src/spritesheet.png");
 	duck->pos.x = 0;
 	duck->pos.y = 100;
 	duck->rect = define_rect(duck->rect);

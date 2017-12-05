@@ -14,7 +14,7 @@
 
 void printhelp(void)
 {
-	int fd = open("Help", O_RDONLY);
+	int fd = open("src/Help", O_RDONLY);
 	char buffer[BUFF_SIZE];
 	int i = read(fd, buffer, BUFF_SIZE);
 	

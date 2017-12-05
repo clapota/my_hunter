@@ -70,7 +70,7 @@ int main(int ac, char **av, char **ae)
 	sfVideoMode mode = {1280, 769, 60};
 	sfRenderWindow *window;
 	sfEvent event;
-	sfSprite *background = define_sprite(background, "background.png");
+	sfSprite *background = define_sprite(background, "src/background.png");
 	
 	initialize_duck(&duck);
 	window = sfRenderWindow_create(mode, "My_Hunter", sfResize | sfClose, NULL);
